@@ -14,4 +14,4 @@ RUN conda env create -f environment.yml
 SHELL ["conda", "run", "-n", "GVC", "/bin/bash", "-c"]
 
 # Run training by default
-CMD ["conda", "run", "--no-capture-output", "-n", "GVC", "python", "train.py"]
+CMD ["conda", "run", "--no-capture-output", "-n", "GVC", "python", "train_cifar10.py"]

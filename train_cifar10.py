@@ -244,7 +244,7 @@ if __name__ == "__main__":
     CHANNELS = 3
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    NUM_EPOCHS = 1       # Number of training epochs
+    NUM_EPOCHS = 750       # Number of training epochs
     LEARNING_RATE = 1e-4  # Adjusted learning rate (common for diffusion)
     ADAM_BETA1 = 0.9      # Adam optimizer beta1
     NOISE_STEPS = 1000    # Number of steps in diffusion process
