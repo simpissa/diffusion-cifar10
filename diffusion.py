@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import math
 
 class DiffusionProcess:
-    def __init__(self, image_size, channels, hidden_dims=[32, 64, 128], beta_start=1e-4, beta_end=0.02, noise_steps=1000, schedule_type='cosine', device=torch.device('cuda')): # Added schedule_type
+    def __init__(self, image_size, channels, hidden_dims=[32, 64, 128], num_res_blocks=2, beta_start=1e-4, beta_end=0.02, noise_steps=1000, schedule_type='cosine', device=torch.device('cuda')): # Added schedule_type
         """
         Initialize the diffusion process.
         Args:
